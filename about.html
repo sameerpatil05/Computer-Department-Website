@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website Design - Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Correct FontAwesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+    <section class="sub-header">
+        <nav>
+            <img width="600" height="82" src="https://www.pvgcoenashik.org/wp-content/uploads/2024/08/pvg-coenashik-logo-v2.png" class="custom-logo" alt="PVG’s College of Engineering &amp; Shrikrushna S. Dhamankar  Institute of Management, Nashik" decoding="async" srcset="https://www.pvgcoenashik.org/wp-content/uploads/2024/08/pvg-coenashik-logo-v2.png 600w, https://www.pvgcoenashik.org/wp-content/uploads/2024/08/pvg-coenashik-logo-v2-300x41.png 300w" sizes="(max-width: 600px) 100vw, 600px">
+           
+            <div class="nav-links" id="navLinks"> <!-- Corrected id to "navLinks" -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li> <!-- Corrected spelling of "ACADEMICS" -->
+                    <li><a href="clubs.html">CLUBS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!----about us content-->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>About Department</h1>
+                <p>The Computer Engineering department has 60 students and a branch code 533024510. We focus on providing a well-rounded education with a strong faculty to prepare students for the evolving world. Our goal is not just to teach current knowledge but also to equip students with the skills needed for a changing global landscape.Considering India’s demographic profile, with 550 million individuals under 25, and the projection that one-fourth of the global workforce will be Indian by 2030, we understand the potential impact on both the country and the world. We are committed to playing a role in shaping a better future.To learn more, you can explore our specific programs, initiatives, and projects. We also collaborate with industry partners and engage in research to stay ahead in the ever-changing field of Computer Engineering.</p>
+
+                   <p1>Prof. Jagdish Y. Kapadnis (Head of Department)</p1> <br> <br>
+                
+                   <a href="academics.html" class="hero-btn red-btn">EXPLORE NOW</a>            
+                </div>
+            <div class="about-col">
+                <img src="images/hod.jpg">
+            </div>    
+        </div>
+    </section>
+
+<!----Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Established in 2010 with an objective of providing professional education. The institute offers undergraduate courses in Engineering in affiliation <br>with the Savitribai Phule Pune University, Pune. It is AIICTE, New Delhi & DTE, Maharashtra.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    <p>Made by <i class="fa-solid fa-laptop-code"></i> PBL grop</p>
+</section>
+    
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"; // Show the menu by setting right to 0
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"; // Hide the menu by setting right to -200px
+        }
+    </script>
+</body>
+</html>
